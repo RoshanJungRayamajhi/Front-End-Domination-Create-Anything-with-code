@@ -8,10 +8,9 @@ function Loading() {
 //   }, []); // The empty dependency array ensures that the effect runs only once
 
   return  (
-    <div className="flex flex-col items-center justify-center w-[85vw] h-full ">
-      <h1 className="text-4xl">Loading</h1>
+    <div className="flex items-center justify-center w-full h-full ">
       <img
-        className="object-contain w-full h-[70vh]"
+        className="object-cover w-full h-full"
         src="https://i.pinimg.com/originals/97/e9/42/97e942ce7fc4e9d4ea6d844a382f251f.gif"
         alt=""
       />

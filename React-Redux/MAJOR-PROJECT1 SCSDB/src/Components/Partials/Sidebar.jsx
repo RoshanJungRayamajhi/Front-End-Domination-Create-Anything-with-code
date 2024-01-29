@@ -13,11 +13,11 @@ const Sidebar = () => {
         <h1 className="text-white font-semibold tesxt-xl mt-7 mb-3">
           News Feeds
         </h1>
-        <Link className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
+        <Link to="/trending" className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
           {" "}
           <i className="ri-fire-fill mr-1"></i>Trending
         </Link>
-        <Link className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
+        <Link to="/popular" className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
           <i className="ri-bard-fill mr-1 "></i>Popular
         </Link>
         <Link className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
