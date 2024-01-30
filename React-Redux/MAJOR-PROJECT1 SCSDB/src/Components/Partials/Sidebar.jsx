@@ -23,10 +23,10 @@ const Sidebar = () => {
         <Link to="/movie" className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
           <i className="ri-movie-2-fill  mr-1"></i>Movies
         </Link>
-        <Link to="/tvshow" className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
+        <Link to="/tv" className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
           <i className="ri-tv-2-fill  mr-1"></i>Tv shows
         </Link>
-        <Link to="/people" className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
+        <Link to="/person" className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
           <i className="ri-group-2-fill  mr-1"></i>People
         </Link>
       </nav>

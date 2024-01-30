@@ -7,3 +7,5 @@
 - calling tmdb api for all features
 - sidenavbar movies popular pages completed
 - infinite scrolling
+- click able to all the links and show their respective page
+- up to moviedetails

@@ -10,7 +10,7 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 const Movie = () => {
     const navigate = useNavigate()
     const [movie, setmovie] = useState([])
-const [category, setcategory] = useState("popular")
+const [category, setcategory] = useState("top_rated")
 const [page, setpage] = useState(1)
 const [hasmore, sethasmore] = useState(true)
   const Getmovie = async()=>{
@@ -70,7 +70,7 @@ const [hasmore, sethasmore] = useState(true)
       next={Getmovie}
       loader= {<h1>loading.....</h1>}
       >
-      <Cards title={category} data={movie}/>
+      <Cards title="movie" data={movie}/>
 
 
       </InfiniteScroll>

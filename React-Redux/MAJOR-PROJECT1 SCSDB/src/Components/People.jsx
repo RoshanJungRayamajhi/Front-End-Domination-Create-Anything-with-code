@@ -61,7 +61,7 @@ const [hasmore, sethasmore] = useState(true)
        next={Getpeople}
        loader={<h1>loading.....</h1>}
       >
-        <Cards data={people} />
+        <Cards data={people} title="people" />
       </InfiniteScroll>
     </div>
   )
