@@ -53,12 +53,13 @@ const Trending = () => {
             onClick={() => navigate(-1)}
             className=" hover:text-[#6556CD] ri-arrow-left-line mr-2"
           ></i>
-          Trending
+          Trending <span>({category})</span>
         </h1>
         <div className=" flex items-center w-[75%]">
           <Topnav />
           <Dropdown
             title="Category"
+            title2= {duration}
             option={["tv", "movie", "all"]}
             func={(e) => setcategory(e.target.value)}
           />

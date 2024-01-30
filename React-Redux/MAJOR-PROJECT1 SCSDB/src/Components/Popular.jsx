@@ -46,31 +46,33 @@ const Popular = () => {
 
   return (
     <div className=" w-full h-full flex flex-col items-center">
-    <div className=" w-full flex items-center justify-between">
+    <div className=" w-full flex items-center justify-between ">
       <h1 className=" text-2xl font-bold text-zinc-400">
         <i
           onClick={() => navigate(-1)}
           className=" hover:text-[#6556CD] ri-arrow-left-line mr-2"
         ></i>
-        popular
+        Popular <span>({category})</span>
       </h1>
       <div className=" flex items-center w-[75%]">
         <Topnav />
         <Dropdown
-          title="Category"
+          title="Category" 
+        
           option={["tv", "movie"]}
           func={(e) => setcategory(e.target.value)}
         />
       </div>
     </div>
-    <InfiniteScroll
-     dataLength={popular.length}
-     hasMore={hasMore}
-     next={Getpopular}
-     loader={<h1>loading.....</h1>}
-    >
-      <Cards title={category} data={popular} />
-    </InfiniteScroll>
+   
+        <InfiniteScroll
+          dataLength={popular.length}
+          hasMore={hasMore}
+          next={Getpopular}
+          loader={<h1>loading.....</h1>}
+        >
+          <Cards title={category} data={popular} />
+        </InfiniteScroll>
   </div>)
 }
 

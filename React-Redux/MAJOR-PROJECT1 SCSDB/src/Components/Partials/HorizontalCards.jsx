@@ -7,7 +7,7 @@ const HorizontalCards = ({data}) => {
   return ( 
       <div className='w-full h-fit flex overflow-hidden overflow-x-auto p-4'>
         {data.map((d,i)=>(
-        <div className=' rounded-md overflow-hidden min-w-[25%] h-[55vh]  mr-5 bg-zinc-900'>
+        <div key={i} className=' rounded-md overflow-hidden min-w-[25%] h-[55vh]  mr-5 bg-zinc-900'>
             <img className=' w-full h-[55%] object-cover' src={`${Img_Url}${
             d.backdrop_path || d.profile_path || d.poster_path
           }`} alt="" />

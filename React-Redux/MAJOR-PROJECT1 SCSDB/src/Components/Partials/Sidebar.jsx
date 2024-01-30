@@ -20,13 +20,13 @@ const Sidebar = () => {
         <Link to="/popular" className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
           <i className="ri-bard-fill mr-1 "></i>Popular
         </Link>
-        <Link className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
+        <Link to="/movie" className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
           <i className="ri-movie-2-fill  mr-1"></i>Movies
         </Link>
-        <Link className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
+        <Link to="/tvshow" className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
           <i className="ri-tv-2-fill  mr-1"></i>Tv shows
         </Link>
-        <Link className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
+        <Link to="/people" className=" hover:bg-[#6446CD] hover:text-white p-3 rounded-md duration-300">
           <i className="ri-group-2-fill  mr-1"></i>People
         </Link>
       </nav>
