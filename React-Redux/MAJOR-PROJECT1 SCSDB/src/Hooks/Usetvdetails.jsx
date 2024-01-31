@@ -1,21 +1,21 @@
 import { useDispatch } from "react-redux";
 import axios from "../utilis/axios";
-import { addmovie, removemovie } from "../utilis/movieslice";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { addtvshow, removetvshow } from "../utilis/tvshowslice";
 
-export const Usemoviedetails = () => {
+const Usetvdetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const getmoviesuggestion = async () => {
+  const gettvsuggestion = async () => {
     try {
-      const details = await axios.get(`/movie/${id}`);
-      const external_ids = await axios.get(`/movie/${id}/external_ids`);
-      const recommendations = await axios.get(`/movie/${id}/recommendations`);
-      const similar = await axios.get(`/movie/${id}/similar`);
-      const videos = await axios.get(`/movie/${id}/videos`);
-      const watchproviders = await axios.get(`/movie/${id}/watch/providers`);
-      const translations = await axios.get(`/movie/${id}/translations`);
+      const details = await axios.get(`/tv/${id}`);
+      const external_ids = await axios.get(`/tv/${id}/external_ids`);
+      const recommendations = await axios.get(`/tv/${id}/recommendations`);
+      const similar = await axios.get(`/tv/${id}/similar`);
+      const videos = await axios.get(`/tv/${id}/videos`);
+      const watchproviders = await axios.get(`/tv/${id}/watch/providers`);
+      const translations = await axios.get(`/tv/${id}/translations`);
      
       let theultimatedetails = {
         detail: details.data,
@@ -26,16 +26,18 @@ export const Usemoviedetails = () => {
         wastchproviders: watchproviders.data.results.IN,
         translations: translations,
       };
-      dispatch(addmovie(theultimatedetails));
-    
+      dispatch(addtvshow(theultimatedetails));
+     
     } catch (error) {
       console.log(error);
     }
   };
   useEffect(() => {
-    getmoviesuggestion();
+    gettvsuggestion();
     return () => {
-      dispatch(removemovie());
+      dispatch(removetvshow());
     };
   }, [id]);
 };
+
+export default Usetvdetails;

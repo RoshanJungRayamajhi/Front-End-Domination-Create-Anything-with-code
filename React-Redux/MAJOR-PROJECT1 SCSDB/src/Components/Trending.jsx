@@ -18,7 +18,7 @@ const Trending = () => {
     try {
       const { data } = await axios.get(`/trending/${category}/${duration}?page=${page}`);
       // settrending(data.results);
-      console.log(data.results)
+     
       if(data.results.length>0){
           settrending((prev) => [...prev, ...data.results]);
           setpage((prev) => prev + 1);
@@ -27,7 +27,6 @@ const Trending = () => {
         sethasMore(false);
 
       }
-      console.log(data);
     } catch (error) {
       console.log(error);
     }

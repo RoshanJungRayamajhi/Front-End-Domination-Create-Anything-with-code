@@ -10,7 +10,7 @@ const navigate= useNavigate();
 const [people, setpeople] = useState([])
 const [page, setpage] = useState(1)
 const [hasmore, sethasmore] = useState(true)
-
+ 
   const Getpeople = async()=>{
    try {
     const {data} = await axios.get(`/person/popular?page=${page}`)
@@ -61,7 +61,7 @@ const [hasmore, sethasmore] = useState(true)
        next={Getpeople}
        loader={<h1>loading.....</h1>}
       >
-        <Cards data={people} title="people" />
+        <Cards data={people} title="person" />
       </InfiniteScroll>
     </div>
   )

@@ -26,7 +26,7 @@ const Popular = () => {
         sethasMore(false);
 
       }
-      console.log(data);
+     
     } catch (error) {
       console.log(error);
     }

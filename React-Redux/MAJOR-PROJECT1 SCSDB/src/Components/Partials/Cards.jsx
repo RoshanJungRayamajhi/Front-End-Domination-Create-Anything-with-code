@@ -4,8 +4,6 @@ import { Img_Url } from '../../utilis/constant'
 import noimage from "/noimage.jpg"
 
 const Cards = ({title,title2,data}) => {
-  console.log(title)
-  console.log(data)
   return (<>
         {/* <h1 className='ml-6 text-2xl text-zinc-200 font-semibold'>{title.toUpperCase()}</h1> */}
     <div className='w-full flex flex-wrap pl-6 mt-8 bg-[#1f1e24] max-w-full '>

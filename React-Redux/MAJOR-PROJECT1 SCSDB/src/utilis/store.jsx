@@ -10,7 +10,7 @@ export const store = configureStore({
     movie: movieReducer,
     trending:trendingReducer,
     popular:popularReducer,
-    people:peopleReducer,
+    person:peopleReducer,
     tvshow:tvshowReducer,
     
     }

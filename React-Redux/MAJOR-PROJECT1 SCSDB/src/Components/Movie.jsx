@@ -16,7 +16,7 @@ const [hasmore, sethasmore] = useState(true)
   const Getmovie = async()=>{
     try {
         const {data}= await axios.get(`/movie/${category}?page=${page}`)
-        console.log(data.results)
+      
         if(data.results.length > 0){
             setmovie((prev)=>[...prev,...data.results])
             setpage((prev)=>prev+1)

@@ -8,9 +8,6 @@ import { store } from './utilis/store.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
    <Provider store={store}>
-
-
-
  <BrowserRouter>
     <App />
  </BrowserRouter>

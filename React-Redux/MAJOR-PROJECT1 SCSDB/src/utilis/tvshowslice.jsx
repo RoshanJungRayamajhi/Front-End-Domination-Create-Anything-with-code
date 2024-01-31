@@ -1,20 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
-
 const tvshowslice = createSlice({
-    name:"tvshow",
-    initialState:{
-        tvshow:null,
+  name: "tvshow",
+  initialState: {
+    info: null,
+  },
+  reducers: {
+    addtvshow: (state, action) => {
+      state.info = action.payload;
     },
-    reducers:{
-        addtvshow: (state,action)=>{
-            state.tvshow = action.payload;
-        },
-        removetvshow:(state,action)=>{
-            state.trending = null;
-        }
-    }
-})
-export const {addtvshow,removetvshow} = tvshowslice.actions
-export default tvshowslice.reducer
+    removetvshow: (state, action) => {
+      state.info = null;
+    },
+  },
+});
+export const { addtvshow, removetvshow } = tvshowslice.actions;
+export default tvshowslice.reducer;

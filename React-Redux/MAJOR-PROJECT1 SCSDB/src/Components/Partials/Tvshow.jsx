@@ -69,7 +69,7 @@ useEffect(()=>{
    next={GetTvshow}
    loader={<h1>loading.....</h1>}
   >
-    <Cards title="tvshow" data={Tvshow} />
+    <Cards title="tv" data={Tvshow} />
   </InfiniteScroll>
 </div>
 );

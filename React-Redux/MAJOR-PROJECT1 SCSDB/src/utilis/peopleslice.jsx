@@ -5,16 +5,16 @@ import { createSlice } from "@reduxjs/toolkit";
 const peopleslice = createSlice({
     name:"people",
     initialState:{
-        people:null,
+       info:null,
     },
     reducers:{
-        addpeople: (state,action)=>{
-            state.people = action.payload;
+        addperson: (state,action)=>{
+            state.info = action.payload;
         },
-        removepeople:(state,action)=>{
-            state.trending = null;
+        removeperson:(state,action)=>{
+            state.info = null;
         }
     }
 })
-export const {addpeople, removepeople} = peopleslice.actions
+export const {addperson, removeperson} = peopleslice.actions
 export default peopleslice.reducer
