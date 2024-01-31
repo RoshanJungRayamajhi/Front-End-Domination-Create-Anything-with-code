@@ -14,3 +14,7 @@
 - header with the trending stuff
 - clickable cards using link and route to show their details
 - details with trailer and recommendations and similar stuff
+
+
+
+web links :"https://front-end-domination-create-anything-with-code-q8ks.vercel.app/"
